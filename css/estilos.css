@@ -1,0 +1,56 @@
+.container
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "header       header       header" 
+                         "nav           nav          nav" 
+                         "section      section2       ads"
+                         "footer       footer       footer";
+}
+.container .heatler{
+    background-color: bisque;
+    grid-column: header;
+}
+.container .nav{
+    background-color: aquamarine;
+    grid-column: nav;
+}
+.container .section{
+    background-color:  yellow;
+    grid-column: section;
+
+}
+.container .section2{
+    background-color: greenyellow;
+    grid-column: section2;
+
+}
+.container .ads{
+    background-color: brown;
+    grid-column: ads;
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+
+
+}
+.ads .p1{
+    background-color: blueviolet;
+    padding: 10px;
+}
+.ads .p2{
+    background-color: rgb(43, 64, 226);
+    padding: 10px;
+
+}
+.container .footer{
+    background-color: coral;
+    grid-column: footer;
+}
